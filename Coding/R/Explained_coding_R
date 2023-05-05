@@ -1,0 +1,15 @@
+#### - Specifying selection of non - numerical characters in a column - ####
+gsub("[^0-9.-]", '', df$coord)
+
+# gsub(X,Y,dataframe$column) creates a vector from especified column "dataframe$column", in which values X, within that column,  
+# are replaced by values Y. In the code above "[^0-9.-]"  is used to identify all values that are not numerical characters 
+# from 0 to 9. the term "^" especifies "non", and the following "0-9" values from 0 to 9. The term '' in the second place, 
+# determines that no the non - numerical characters ("[^0-9.-]") will be replaced by a 0 character length empty space, thus erased. 
+# (we can add an space between ' ' to replace "[^0-9.-]" values by a 1 character length empty space)
+
+#### - ####
+
+
+
+
+
